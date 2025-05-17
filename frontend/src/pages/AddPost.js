@@ -24,7 +24,7 @@ export default function AddPost() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
 
-  // Define file size and video duration limits
+  // Define file size and video duration limits - these can be adjusted as needed
   const MAX_FILE_SIZE = 50 * 1024 * 1024; 
   const MAX_VIDEO_DURATION = 30; 
 
@@ -53,6 +53,7 @@ export default function AddPost() {
     }
   };
 
+  
   const getVideoDuration = (file) => {
     return new Promise((resolve) => {
       const video = document.createElement("video");

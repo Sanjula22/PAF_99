@@ -56,6 +56,7 @@ export default function LearningPlans() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
 
+  // Check if user is logged in
   useEffect(() => {
     const fetchPlans = async () => {
       try {
