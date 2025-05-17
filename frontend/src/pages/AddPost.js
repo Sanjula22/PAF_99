@@ -52,7 +52,7 @@ export default function AddPost() {
       setIsSubmitting(false);
     }
   };
-
+// Function to get video duration
   const getVideoDuration = (file) => {
     return new Promise((resolve) => {
       const video = document.createElement("video");
