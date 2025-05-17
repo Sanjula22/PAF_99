@@ -67,6 +67,7 @@ const ProgressUpdate = () => {
     }
   };
 
+  // Fetch learning plans for the select dropdown
   const fetchLearningPlans = async () => {
     try {
       const response = await axios.get(`${API_BASE_URL}/api/learning-plans/my`, {
